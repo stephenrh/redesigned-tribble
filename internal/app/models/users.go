@@ -1,7 +1,7 @@
 package models
 
 import (
-	"app/models/mongo"
+	"github.com/stephenrh/gosvc1/internal/app/models/mongo"
 
 	"gopkg.in/mgo.v2/bson"
 )
