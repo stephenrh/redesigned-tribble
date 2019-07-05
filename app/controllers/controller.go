@@ -7,25 +7,26 @@ import (
 	"gopkg.in/mgo.v2/bson"
 )
 
+// CtrlErr Generic controller error interface
 type CtrlErr map[string]interface{}
 
 func parseUintOrDefault(intStr string, _default uint64) uint64 {
-	if value, err := strconv.ParseUint(intStr, 0, 64); err != nil {
+	value, err := strconv.ParseUint(intStr, 0, 64)
+	if err != nil {
 		return _default
-	} else {
-		return value
 	}
+	return value
 }
 
 func parseIntOrDefault(intStr string, _default int64) int64 {
-	if value, err := strconv.ParseInt(intStr, 0, 64); err != nil {
+	value, err := strconv.ParseInt(intStr, 0, 64)
+	if err != nil {
 		return _default
-	} else {
-		return value
 	}
+	return value
 }
 
-func convertToObjectIdHex(id string) (result bson.ObjectId, err error) {
+func convertToObjectIDHex(id string) (result bson.ObjectId, err error) {
 	defer func() {
 		if r := recover(); r != nil {
 			err = fmt.Errorf("Unable to convert %v to object id", id)
