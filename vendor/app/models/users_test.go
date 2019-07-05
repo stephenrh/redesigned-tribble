@@ -3,7 +3,8 @@ package models
 import (
 	"testing"
 
-	"github.com/stephenrh/gosvc1/internal/app/models/mongo"
+	"app/models/mongo"
+
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/mgo.v2/bson"
 )

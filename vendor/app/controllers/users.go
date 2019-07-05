@@ -1,8 +1,9 @@
 package controllers
 
 import (
+	"app/models"
+
 	"github.com/gin-gonic/gin"
-	"github.com/stephenrh/gosvc1/internal/app/models"
 )
 
 func index(c *gin.Context) {

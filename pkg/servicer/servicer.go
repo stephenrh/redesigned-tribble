@@ -1,9 +1,10 @@
 package servicer
 
 import (
+	"app/controllers"
+	"app/models/mongo"
+
 	"github.com/gin-gonic/gin"
-	"github.com/stephenrh/gosvc1/internal/app/controllers"
-	"github.com/stephenrh/gosvc1/internal/app/models/mongo"
 )
 
 func NewService() *gin.Engine {
