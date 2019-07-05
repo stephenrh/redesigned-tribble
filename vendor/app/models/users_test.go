@@ -33,6 +33,7 @@ func TestCreateUser(t *testing.T) {
 	}
 	assert.Len(t, user.ID, 12)
 	createdUserID = user.ID
+	t.Log("Create user test passed")
 }
 
 func TestListUsers(t *testing.T) {
@@ -43,6 +44,7 @@ func TestListUsers(t *testing.T) {
 	}
 	assert.Len(t, users, 1)
 	assert.Equal(t, users[0].ID, createdUserID)
+	t.Log("List users test past")
 }
 
 func TestFindUser(t *testing.T) {
@@ -52,4 +54,5 @@ func TestFindUser(t *testing.T) {
 		t.FailNow()
 	}
 	assert.Equal(t, user.ID, createdUserID)
+	t.Log("Find User test passed")
 }
