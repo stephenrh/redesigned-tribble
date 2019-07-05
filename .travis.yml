@@ -4,4 +4,5 @@ go:
   - "1.10"
 services:
   - mongodb
-gobuild_args: -v ./vendor/...
+script:
+  - go test -v ./vendor/...
