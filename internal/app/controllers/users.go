@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/stephenrh/gosvc1/internal/app/models"
+	"github.com/stephenrh/redesigned-tribble/internal/app/models"
 
 	"github.com/gin-gonic/gin"
 )

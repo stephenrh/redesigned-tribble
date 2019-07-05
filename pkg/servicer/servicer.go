@@ -1,9 +1,9 @@
 package servicer
 
 import (
-	"github.com/stephenrh/gosvc1/internal/app/models/mongo"
+	"github.com/stephenrh/redesigned-tribble/internal/app/models/mongo"
 
-	"github.com/stephenrh/gosvc1/internal/app/controllers"
+	"github.com/stephenrh/redesigned-tribble/internal/app/controllers"
 
 	"github.com/gin-gonic/gin"
 )
