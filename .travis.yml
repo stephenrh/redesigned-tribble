@@ -7,4 +7,5 @@ before_install:
 services:
   - mongodb
 script:
-  - go test -v ./...
+  - env GO111MODULE=on go build
+  - env GO111MODULE=on go test -v ./...
