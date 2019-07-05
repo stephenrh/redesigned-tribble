@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/stephenrh/redesigned-tribble/internal/app/models/mongo"
+	"selfscale/users/app/models/mongo"
 
 	"gopkg.in/mgo.v2/bson"
 )

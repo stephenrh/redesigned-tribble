@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/stephenrh/redesigned-tribble/internal/app/models"
+	"selfscale/users/app/models"
 
 	"github.com/gin-gonic/gin"
 )

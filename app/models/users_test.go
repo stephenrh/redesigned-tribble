@@ -3,7 +3,7 @@ package models
 import (
 	"testing"
 
-	"github.com/stephenrh/redesigned-tribble/internal/app/models/mongo"
+	"selfscale/users/app/models/mongo"
 
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/mgo.v2/bson"

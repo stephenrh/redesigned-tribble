@@ -1,9 +1,8 @@
-package servicer
+package app
 
 import (
-	"github.com/stephenrh/redesigned-tribble/internal/app/models/mongo"
-
-	"github.com/stephenrh/redesigned-tribble/internal/app/controllers"
+	"selfscale/users/app/controllers"
+	"selfscale/users/app/models/mongo"
 
 	"github.com/gin-gonic/gin"
 )
